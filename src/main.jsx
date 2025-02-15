@@ -1,11 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import CardList from "./CardList.jsx";
-import { robots } from "./robots.jsx";
+import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <CardList robots={robots} />
+    <App />
   </StrictMode>
 );

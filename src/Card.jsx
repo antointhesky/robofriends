@@ -1,10 +1,12 @@
-const Card = (props) => {
+import "./card.css";
+
+const Card = ({ name, email, id }) => {
   return (
-    <div>
-      <img alt="robots" src="https://robohash.org/test?200x200" />
-      <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-        <h2>{props.name}</h2>
-        <p>{props.email}</p>
+    <div className="card">
+      <img alt="robots" src={`https://robohash.org/${id}?200x200`} />
+      <div>
+        <h2>{name}</h2>
+        <p>{email}</p>
       </div>
     </div>
   );
